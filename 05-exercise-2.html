@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let total = 0;
+      let i = 0;
+      sumEven = 0;
 
-      for (let i = 0; i < 100; i++) {
-        const modulus = i % 2;
-
-        if (modulus != 1) {
-          total = total + i;
-          console.log(total);
+      function isEven(i) {
+        if (i % 2 != 1) {
+          return true;
+        } else {
+          return false;
         }
       }
+
+      while (i < 100) {
+        if (isEven(i)) {
+          sumEven = sumEven + i;
+        }
+        i++;
+      }
+      console.log(sumEven);
     </script>
   </head>
   <body></body>
