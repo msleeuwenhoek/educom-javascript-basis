@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let totalPrice = 0;
+      let totalAfterTax = 0;
+      let shoppingcart = [
+        { item: "bread", price: 1.04 },
+        { item: "cheese", price: 3.25 },
+        { item: "cucumber", price: 1.55 },
+        { item: "nutella", price: 4.35 },
+      ];
+
+      let expenses = shoppingcart.map((product) => {
+        return product.price;
+      });
+
+      expenses.forEach((expense) => {
+        totalPrice += expense;
+      });
+      console.log(totalPrice);
+
+      totalAfterTax = (totalPrice * 1.21).toFixed(2);
+      console.log(totalAfterTax);
+    </script>
+  </head>
+  <body></body>
+</html>
