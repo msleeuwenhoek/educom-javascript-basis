@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const myFunction = (value, index, array) => {
+        return value > 18;
+      };
+
+      const numbers = [45, 4, 9, 16, 25];
+      const over18 = numbers.filter(myFunction);
+
+      const n = numbers.filter((value) => value > 18);
+      console.log(over18, n);
+
+      const fruits = ["Apple", "Orange", "Apple", "Mango"];
+      const numbers2 = [4, 9, 16, 25, 29];
+
+      /// Helper function
+      const findOver18 = (item) => {
+        return item > 18;
+      };
+
+      /// indexOf
+      const a = fruits.indexOf("Apple");
+      const b = fruits.lastIndexOf("Apple");
+
+      // find
+      const c = numbers2.find(findOver18);
+      const d = numbers2.findIndex(findOver18);
+
+      console.log({ a: a, b: b, c: c, d: d });
+    </script>
+  </head>
+  <body></body>
+</html>
