@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const shoppingCart = [
+        { id: 1, name: "HTML Book", price: 12.5 },
+        { id: 2, name: "CSS Book", price: 10.0 },
+        { id: 3, name: "JavaScript Book", price: 20.0 },
+      ];
+
+      let total = 0;
+      shoppingCart.forEach((item) => {
+        total += item.price;
+      });
+
+      console.log(`Total: ${total}`);
+    </script>
+  </head>
+  <body></body>
+</html>
